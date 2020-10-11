@@ -6,7 +6,9 @@ from sklearn.feature_extraction.text import CountVectorizer
 from nltk.util import ngrams
 from sklearn.svm import SVC, LinearSVC
 
-
+df = pd.read_csv('/content/drive/My Drive/Smartknower-Internship/file1.csv')
+x = df.iloc[:,2].values.astype('U') # Message column as input
+y = df.iloc[:,-1].values.astype('U') # Label column as output
 st.title("Wine Review Classifier")
 st.subheader('Count Vectorizer')
 st.write('This project is based on LinearSVC Classifier')
