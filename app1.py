@@ -7,8 +7,6 @@ from nltk.util import ngrams
 from sklearn.svm import SVC, LinearSVC
 
 
-x = df.iloc[:,2].values.astype('U') # Message column as input
-y = df.iloc[:,-1].values.astype('U') # Label column as output
 st.title("Wine Review Classifier")
 st.subheader('Count Vectorizer')
 st.write('This project is based on LinearSVC Classifier')
